@@ -1,1 +1,15 @@
+# Executáveis
 *.exe
+*.out
+a.out
+
+# Arquivos intermediários da compilação
+*.o
+*.obj
+
+# Arquivos de depuração (Windows)
+*.pdb
+*.ilk
+
+# Configurações do editor
+.vscode/
