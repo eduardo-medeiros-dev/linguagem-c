@@ -2,9 +2,9 @@
 
 int main(void) {
 
-    /*Como em C não existe um tipo booleano, a condição do comando if
-    considera que 0 é falso e qualquer coisa diferente disso é verdadeiro.
-    */
+   /* O C original não tinha tipo booleano. Por isso, na condição do if,
+   0 é falso e qualquer valor diferente de 0 é verdadeiro.
+   (Desde o C99 existe o tipo bool em <stdbool.h>, mas a regra continua a mesma.) */
 
     int x;
 
