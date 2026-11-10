@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+    int anterior = 0;
+    int atual = 1;
+    int valorTemporario;
+    int posiTermo;
+
+    printf("Digite a posição de um termo: ");
+
+    if (scanf("%d", &posiTermo) != 1 || posiTermo < 0) {
+        printf("Valor inválido!\n");
+        return 1;
+    }
+
+    if (posiTermo == 0) {
+        printf("Valor do termo: 0\n");
+    }
+    else if (posiTermo == 1) {
+        printf("Valor do termo: 1\n");
+    }
+    else {
+        for (int i = 2; i <= posiTermo; i++) {
+            valorTemporario = anterior + atual;
+
+            anterior = atual;
+            atual = valorTemporario;
+        }
+
+        printf("Valor do termo: %d\n", atual);
+    }
+
+    return 0;
+}
