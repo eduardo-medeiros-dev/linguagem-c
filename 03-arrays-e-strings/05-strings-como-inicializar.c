@@ -19,7 +19,7 @@ int main(void){
 
 
     // Maneira 2
-    char str2[] = {'O', 'i'. '!', '\0'};
+    char str2[] = {'O', 'i', '!', '\0'};
 
 
     // Maneira 3
